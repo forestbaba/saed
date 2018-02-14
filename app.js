@@ -100,7 +100,7 @@ app.post('/api/registernewsaed', function (req, res)
 })
 
 app.get('/api/registeredsaed', function(req, res) {
-    saedgroupgit iny.find({}, function(err, users) {
+    saedgroup.find({}, function(err, users) {
         var userMap = {};
 
         users.forEach(function(user) {
