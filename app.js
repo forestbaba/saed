@@ -6,7 +6,9 @@ var bodyParser = require('body-parser');
 var expressValidator = require('express-validator');
 
 var RegisterSaed = require('./routes/register_saed_group');
-mongoose.connect( 'mongodb://localhost:27017/CW');
+mongoose.connect(process.env.MONGODB_URI );
+
+// mongoose.connect( 'mongodb://localhost:27017/CW');
 var saedgroup = require('./model/saed_group');
 
 
